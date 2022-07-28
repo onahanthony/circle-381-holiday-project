@@ -29,6 +29,8 @@ function startApp() {
       prefix.innerHTML = "+233";
     } else if ((myCountry.value = "uga")) {
       prefix.innerHTML = "+256";
+    } else if ((myCountry.value = "bot")) {
+      prefix.innerHTML = "+267";
     } else {
       console.log("error");
     }
@@ -308,7 +310,63 @@ function startApp() {
       let netImage = `<img src=".//images/air.png" alt="Airtel logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
-        "Hi " + myName.value + ", your network  service provider is Airtel Uganda";
+        "Hi " +
+        myName.value +
+        ", your network  service provider is Airtel Uganda";
+    } else if (
+      (myCountry.value === "bot") &
+      (text.includes("71") ||
+        text.includes("741") ||
+        text.includes("742") ||
+        text.includes("745") ||
+        text.includes("746") ||
+        text.includes("747") ||
+        text.includes("754") ||
+        text.includes("755") ||
+        text.includes("760") ||
+        text.includes("761") ||
+        text.includes("762") ||
+        text.includes("766") ||
+        text.includes("767"))
+    ) {
+      let netImage = `<img src=".//images/mas.png" alt="mascom logo"></img>`;
+      container.innerHTML = netImage;
+      document.getElementById("demo").innerHTML =
+        "Hi " +
+        myName.value +
+        ", your network  service provider is Mascom Botswana";
+      } else if (
+        (myCountry.value === "bot") &
+        (text.includes("72") ||
+          text.includes("743") ||
+          text.includes("744") ||
+          text.includes("750") ||
+          text.includes("751") ||
+          text.includes("752") ||
+          text.includes("753") ||
+          text.includes("763") ||
+          text.includes("764") ||
+          text.includes("765"))
+      ) {
+        let netImage = `<img src=".//images/oran.png" alt="Orange logo"></img>`;
+        container.innerHTML = netImage;
+        document.getElementById("demo").innerHTML =
+          "Hi " +
+          myName.value +
+        ", your network  service provider is Orange Botswana";
+      } else if (
+        (myCountry.value === "uga") &
+        (text.includes("070") ||
+          text.includes("075") ||
+          text.includes("074") ||
+          text.includes("020"))
+      ) {
+        let netImage = `<img src=".//images/bot.png" alt="BTC logo"></img>`;
+        container.innerHTML = netImage;
+        document.getElementById("demo").innerHTML =
+          "Hi " +
+          myName.value +
+          ", your network  service provider is Botswana Telecom";
     } else {
       document.getElementById("demo").innerHTML = "Invalid service provider";
       container.innerHTML = "";
