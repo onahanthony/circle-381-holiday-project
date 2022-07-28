@@ -363,7 +363,12 @@ function startApp() {
         document.getElementById("demo").innerHTML =
           "Hi " +
           myName.value +
-          ", your network  service provider is Botswana Telecom";
+        ", your network  service provider is Botswana Telecom";
+      } else if (
+        myCountry.value === "" || myInput.value ==="" || myName.value ===""
+      ) {
+        document.getElementById("demo").innerHTML =
+          "Comrade fill up the form";
     } else {
       document.getElementById("demo").innerHTML = "Invalid service provider";
       container.innerHTML = "";
