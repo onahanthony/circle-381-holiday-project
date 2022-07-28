@@ -24,6 +24,20 @@ body {
   margin-top: 100px;
   text-align: center;
 }
+.top-text h1{
+    font-size: 35px;
+
+}
+.form label{
+    font-size: 14px;
+}
+.form button{
+    font-size: 16px;
+    color: white;
+}
+.top-text p{
+    font-size: 22px;
+}
 .flexed-div {
   display: flex;
   justify-content: center;
@@ -118,49 +132,26 @@ body {
   border-color: #777;
 }
 
-/* #mtn-logo {
-  position: absolute;
-  top: 10%;
-  right: 85%;
-  align-items: center;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
-} */
+@media only screen and (max-width: 768px){
+    .top-text{
+        margin-top: 70px;
+    }
+    .container{
+        padding: 20px;
+    
+    }
 
-/* #glo-logo {
-  position: absolute;
-  top: 10%;
-  right: 85%;
-  align-items: center;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
-} */
-
-/* #airtel-logo {
-  position: absolute;
-  top: 10%;
-  right: 85%;
-  align-items: center;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
-} */
-
-/* #ninemobile-logo {
-  position: absolute;
-  top: 10%;
-  right: 85%;
-  align-items: center;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
-} */
-
-/* input {
-  width: 100%;
-  height: 100%;
-  padding-left: 0.5rem;
-  align-items: center;
-} */
+    .input-area{
+        width: 100%;
+        height: 35px;
+        margin: 3px 0px 15px 0px;
+    }
+    .submit{
+        width: 100%;
+        height: 35px;
+    }
+    .input-box{
+        width: 100%;
+        height: 35px;
+    }
+}
