@@ -355,11 +355,8 @@ function startApp() {
           myName.value +
         ", your network  service provider is Orange Botswana";
       } else if (
-        (myCountry.value === "uga") &
-        (text.includes("070") ||
-          text.includes("075") ||
-          text.includes("074") ||
-          text.includes("020"))
+        (myCountry.value === "bot") &
+        (text.includes("73"))
       ) {
         let netImage = `<img src=".//images/bot.png" alt="BTC logo"></img>`;
         container.innerHTML = netImage;
