@@ -27,8 +27,8 @@ function startApp() {
       prefix.innerHTML = "+237";
     } else if (myCountry.value === "gha") {
       prefix.innerHTML = "+233";
-      // } else if ((myCountry.value = "cam")) {
-      //   document.getElementById("prefix").innerHTML = "+234";
+    } else if ((myCountry.value = "uga")) {
+      prefix.innerHTML = "+256";
     } else {
       console.log("error");
     }
@@ -286,6 +286,29 @@ function startApp() {
         "Hi " +
         myName.value +
         ", your network  service provider is Telkom Kenya";
+    } else if (
+      (myCountry.value === "uga") &
+      (text.includes("076") ||
+        text.includes("077") ||
+        text.includes("078") ||
+        text.includes("031") ||
+        text.includes("039"))
+    ) {
+      let netImage = `<img src=".//images/mtn.png" alt="MTN logo"></img>`;
+      container.innerHTML = netImage;
+      document.getElementById("demo").innerHTML =
+        "Hi " + myName.value + ", your network  service provider is MTN Uganda";
+    } else if (
+      (myCountry.value === "uga") &
+      (text.includes("070") ||
+        text.includes("075") ||
+        text.includes("074") ||
+        text.includes("020"))
+    ) {
+      let netImage = `<img src=".//images/air.png" alt="Airtel logo"></img>`;
+      container.innerHTML = netImage;
+      document.getElementById("demo").innerHTML =
+        "Hi " + myName.value + ", your network  service provider is Airtel Uganda";
     } else {
       document.getElementById("demo").innerHTML = "Invalid service provider";
       container.innerHTML = "";
