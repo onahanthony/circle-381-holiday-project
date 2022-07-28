@@ -17,9 +17,13 @@
 }
 
 body {
-  background-image: none;
+    background-image: url("bg-img.png");
   font-family: "Spartan MB";
-  text-align: center;
+  
+}
+.top-text{
+    margin-top: 50px;
+    text-align: center;
 }
 .container {
   display: inline-block;
@@ -37,6 +41,16 @@ body {
   border: #d5f1ee;
   border-radius: 20px;
   margin: 3px 0px 20px 0px;
+}
+
+.footer{
+    margin-top: 30px;
+    background-color: #d5f1ee;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+
 }
 
 /* #mtn-logo {
