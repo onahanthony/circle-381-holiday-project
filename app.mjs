@@ -14,8 +14,8 @@ function startApp() {
   const prefix = document.querySelector(".prefix");
   const netResult = document.getElementById("results");
   const netForm = document.getElementById("input-form");
-  
-  netResult.style.display = 'none'
+
+  netResult.style.display = "none";
 
   myCountry.addEventListener("change", function (e) {
     console.log(e);
@@ -37,8 +37,8 @@ function startApp() {
   button.addEventListener("click", function (e) {
     e.preventDefault();
     let text = myInput.value.toString();
-    netForm.style.display = 'none'
-    netResult.style.display = 'block'
+    netForm.style.display = "none";
+    netResult.style.display = "block";
 
     if (
       (myCountry.value === "nig") &
@@ -56,7 +56,7 @@ function startApp() {
         text.includes("906") ||
         text.includes("903"))
     ) {
-      let netImage = `<img src=".//images/mtn.png" alt="mtn logo" id="mtn-logo"></img>`;
+      let netImage = `<img src=".//images/mtn.png" alt="mtn logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " + myName.value + ", your network service provider is MTN Nigeria";
@@ -69,7 +69,7 @@ function startApp() {
         text.includes("811") ||
         text.includes("905"))
     ) {
-      let netImage = `<img src=".//images/glo.jpg" id="glo-logo"></img>`;
+      let netImage = `<img src=".//images/glo.jpg" alt="glo logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -84,7 +84,7 @@ function startApp() {
         text.includes("701") ||
         text.includes("902"))
     ) {
-      let netImage = `<img src=".//images/air.png"airtel logo" id="airtel-logo"></img>`;
+      let netImage = `<img src=".//images/air.png"airtel logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -97,7 +97,7 @@ function startApp() {
         text.includes("817") ||
         text.includes("909"))
     ) {
-      let netImage = `<img src=".//images/9m.png" alt="9mobile logo" id="9mobile-logo"></img>`;
+      let netImage = `<img src=".//images/9m.png" alt="9mobile logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -135,7 +135,7 @@ function startApp() {
         "Hi " +
         myName.value +
         ", your network  service provider is Vodafone Ghana";
-    } else if ((myCountry.value === "gha") & (text.includes("028"))) {
+    } else if ((myCountry.value === "gha") & text.includes("028")) {
       let netImage = `<img src=".//images/exp.png" alt="expresso logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
@@ -151,7 +151,7 @@ function startApp() {
         text.includes("77") ||
         text.includes("748"))
     ) {
-      let netImage = `<img src=".//images/mtn.png" alt="mtn logo" id="mtn-logo"></img>`;
+      let netImage = `<img src=".//images/mtn.png" alt="mtn logo" ></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -167,7 +167,7 @@ function startApp() {
         text.includes("99") ||
         text.includes("96"))
     ) {
-      let netImage = `<img src=".//images/oran.png" alt="9mobile logo"></img>`;
+      let netImage = `<img src=".//images/oran.png" alt="orange logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -177,7 +177,7 @@ function startApp() {
       (myCountry.value === "cam") &
       (text.includes("22") || text.includes("33"))
     ) {
-      let netImage = `<img src="https://res.cloudinary.com/seyitunde/image/upload/v1658828503/ninemobile.png" alt="9mobile logo" id="ninemobile-logo"></img>`;
+      let netImage = `<img src=".//images/cam.png" alt="Camtel logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " + myName.value + ", your network  service provider is CAMTEL";
@@ -222,7 +222,7 @@ function startApp() {
         text.includes("790") ||
         text.includes("729"))
     ) {
-      let netImage = `<img src="https://res.cloudinary.com/seyitunde/image/upload/v1658828503/ninemobile.png" alt="9mobile logo" id="ninemobile-logo"></img>`;
+      let netImage = `<img src=".//images/saf.png"" alt="Safaricom logo" ></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -261,7 +261,7 @@ function startApp() {
         text.includes("788") ||
         text.includes("789"))
     ) {
-      let netImage = `<img src="https://res.cloudinary.com/seyitunde/image/upload/v1658828503/ninemobile.png" alt="9mobile logo" id="ninemobile-logo"></img>`;
+      let netImage = `<img src=".//images/air.png" alt="Airtel logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -280,7 +280,7 @@ function startApp() {
         text.includes("778") ||
         text.includes("779"))
     ) {
-      let netImage = `<img src="https://res.cloudinary.com/seyitunde/image/upload/v1658828503/ninemobile.png" alt="9mobile logo" id="ninemobile-logo"></img>`;
+      let netImage = `<img src=".//images/tel.png" alt="Telkom logo"></img>`;
       container.innerHTML = netImage;
       document.getElementById("demo").innerHTML =
         "Hi " +
@@ -292,10 +292,10 @@ function startApp() {
       console.log("invalid");
     }
   });
-  button1.addEventListener("click", function (e){ 
-    netForm.style.display = 'block'
-    netResult.style.display = 'none'
-   })
+  button1.addEventListener("click", function (e) {
+    netForm.style.display = "block";
+    netResult.style.display = "none";
+  });
 }
 
 // ======= DO NOT EDIT ============== //
