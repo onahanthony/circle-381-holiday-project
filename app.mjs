@@ -323,9 +323,9 @@ function startApp() {
       myInput.value === "" ||
       myName.value === ""
     ) {
-      demo.innerHTML = "Comrade fill up the form";
+      demo.innerHTML = "Dear comrade please fill up the form";
     } else {
-      demo.innerHTML = "Invalid service provider";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> we were unable to identify your network service provider`;
       container.innerHTML = "";
       console.log("invalid");
     }
