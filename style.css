@@ -149,10 +149,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .body {
-    padding: 1rem;
-  }
-
   .top-text {
     margin-top: 50px;
   }
