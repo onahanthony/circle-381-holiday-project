@@ -13,19 +13,19 @@
       format("svg");
 }
 @font-face {
-    font-family: "Proxima Nova";
-    src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot");
-    src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix")
-        format("embedded-opentype"),
-      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2")
-        format("woff2"),
-      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff")
-        format("woff"),
-      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf")
-        format("truetype"),
-      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova")
-        format("svg");
-  }
+  font-family: "Proxima Nova";
+  src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot");
+  src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova")
+      format("svg");
+}
 * {
   box-sizing: border-box;
 }
@@ -35,25 +35,24 @@ body {
   font-family: "Proxima Nova";
 }
 .top-text {
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
 }
-.top-text h1{
-    font-size: 35px;
-
+.top-text h1 {
+  font-size: 30px;
 }
-.form label{
-    font-size: 14px;
+.form label {
+  font-size: 12px;
 }
-.form button{
-    font-size: 16px;
-    color: white;
+.form button {
+  font-size: 14px;
+  color: white;
 }
-.form select{
-    border-right: 16px solid transparent
+.form select {
+  border-right: 16px solid transparent;
 }
-.top-text p{
-    font-size: 22px;
+.top-text p {
+  font-size: 20px;
 }
 .flexed-div {
   display: flex;
@@ -63,27 +62,27 @@ body {
   display: inline-block;
   justify-content: center;
   border: solid 2px #d5f1ee;
-  padding: 30px;
-  margin-top: 50px;
+  padding: 25px;
+  margin-top: 40px;
   border-radius: 10px;
   background: #d5f1ee;
 }
 .input-area {
   padding: 10px;
-  width: 400px;
-  height: 40px;
+  width: 350px;
+  height: 35px;
   background: #fff;
   border: #d5f1ee;
   border-radius: 20px;
-  margin: 3px 0px 20px 0px;
-  font-size: 14px;
+  margin: 3px 0px 15px 0px;
+  font-size: 12px;
 }
 .submit {
   background: #2079ff;
   border: #2079ff;
-  width: 400px;
-  height: 40px;
-  margin-top: 40px;
+  width: 350px;
+  height: 35px;
+  margin-top: 35px;
   border-radius: 20px;
   color: white;
 }
@@ -110,7 +109,7 @@ body {
   padding-top: 1rem;
   background-color: #d5f1ee;
   width: 100%;
-  height: 80px;
+  height: 70px;
   position: absolute;
   bottom: 0;
 }
@@ -121,15 +120,12 @@ body {
 .input-box {
   display: flex;
   align-items: center;
-  /* max-width: 300px; */
   background: #fff;
-  /* background: #fbfbfb; */
   border: #d5f1ee;
   border-radius: 20px;
-  /* padding-left: 0.5rem; */
   overflow: hidden;
-  width: 400px;
-  height: 40px;
+  width: 350px;
+  height: 35px;
 }
 
 .input-box .prefix {
@@ -151,46 +147,43 @@ body {
   border-color: #777;
 }
 
-@media only screen and (max-width: 768px){
-    .top-text{
-        margin-top: 50px;
-    }
-    .top-text h1{
-        font-size: 20px;
-    
-    }
-    .top-text p{
-        font-size: 15px;
-    
-    }
-    .container{
-        padding: 20px;
-    
-    }
-    .form label{
-        font-size: 9px;
-    }
-    .form button{
-        font-size: 12px;
-    }
-    .input-area{
-        width: 100%;
-        height: 30px;
-        margin: 3px 0px 15px 0px;
-        min-width: 260px;
-        font-size: 10px;
-    }
-    .submit{
-        width: 100%;
-        height: 30px;
-        min-width: 260px;
-    }
-    .input-box{
-        width: 100%;
-        height: 30px;
-        min-width: 260px;
-    }
-    .footer p{
-        font-size: 10px;
-    }
+@media only screen and (max-width: 768px) {
+  .top-text {
+    margin-top: 50px;
+  }
+  .top-text h1 {
+    font-size: 20px;
+  }
+  .top-text p {
+    font-size: 15px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .form label {
+    font-size: 9px;
+  }
+  .form button {
+    font-size: 12px;
+  }
+  .input-area {
+    width: 100%;
+    height: 30px;
+    margin: 3px 0px 15px 0px;
+    min-width: 260px;
+    font-size: 10px;
+  }
+  .submit {
+    width: 100%;
+    height: 30px;
+    min-width: 260px;
+  }
+  .input-box {
+    width: 100%;
+    height: 30px;
+    min-width: 260px;
+  }
+  .footer p {
+    font-size: 10px;
+  }
 }
