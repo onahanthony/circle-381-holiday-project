@@ -31,7 +31,7 @@
 }
 
 body {
-  /* background-image: url("bg-img.png"); */
+  background-image: url("bg-img.png");
   font-family: "Proxima Nova";
 
 }
@@ -151,6 +151,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    body{
+        background-size: contain;
+    }
   .top-text {
     margin-top: 70px;
   }
