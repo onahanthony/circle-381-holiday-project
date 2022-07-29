@@ -35,6 +35,9 @@ body {
   font-family: "Proxima Nova";
   min-height: 100vh;
 }
+.bodyy {
+  min-height: 100vh;
+}
 .top-text {
   margin-top: 80px;
   text-align: center;
