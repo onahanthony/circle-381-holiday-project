@@ -33,7 +33,6 @@
 body {
   background-image: url("bg-img.png");
   font-family: "Proxima Nova";
-  padding: 1rem;
 }
 .top-text {
   margin-top: 80px;
@@ -149,6 +148,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .body {
+    padding: 1rem;
+  }
+
   .top-text {
     margin-top: 50px;
   }
