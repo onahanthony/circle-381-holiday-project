@@ -12,13 +12,27 @@
     url("//db.onlinewebfonts.com/t/b6e5385a4772a5792603dfb941fd7909.svg#Spartan MB")
       format("svg");
 }
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot");
+    src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix")
+        format("embedded-opentype"),
+      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2")
+        format("woff2"),
+      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff")
+        format("woff"),
+      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf")
+        format("truetype"),
+      url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova")
+        format("svg");
+  }
 * {
   box-sizing: border-box;
 }
 
 body {
   background-image: url("image-1.png");
-  font-family: "Spartan MB";
+  font-family: "Proxima Nova";
 }
 .top-text {
   margin-top: 100px;
@@ -34,6 +48,9 @@ body {
 .form button{
     font-size: 16px;
     color: white;
+}
+.form select{
+    border-right: 16px solid transparent
 }
 .top-text p{
     font-size: 22px;
@@ -68,6 +85,7 @@ body {
   height: 40px;
   margin-top: 40px;
   border-radius: 20px;
+  color: white;
 }
 .img-container {
   display: flex;
@@ -98,6 +116,7 @@ body {
 }
 .footer p {
   text-align: center;
+  font-size: 14px;
 }
 .input-box {
   display: flex;
@@ -153,7 +172,6 @@ body {
     }
     .form button{
         font-size: 12px;
-        color: white;
     }
     .input-area{
         width: 100%;
@@ -171,5 +189,8 @@ body {
         width: 100%;
         height: 30px;
         min-width: 260px;
+    }
+    .footer p{
+        font-size: 10px;
     }
 }

@@ -28,9 +28,9 @@ function startApp() {
       prefix.innerHTML = "+237";
     } else if (myCountry.value === "gha") {
       prefix.innerHTML = "+233";
-    } else if ((myCountry.value = "uga")) {
+    } else if (myCountry.value === "uga") {
       prefix.innerHTML = "+256";
-    } else if ((myCountry.value = "bot")) {
+    } else if (myCountry.value === "bot") {
       prefix.innerHTML = "+267";
     } else {
       console.log("error");
@@ -61,8 +61,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/mtn.png" alt="mtn logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " + myName.value + ", your network service provider is MTN Nigeria";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network service provider is MTN Nigeria`;
     } else if (
       (myCountry.value === "nig") &
       (text.includes("805") ||
@@ -74,10 +73,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/glo.jpg" alt="glo logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is GLO Nigeria";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is GLO Nigeria`;
     } else if (
       (myCountry.value === "nig") &
       (text.includes("802") ||
@@ -85,14 +81,12 @@ function startApp() {
         text.includes("708") ||
         text.includes("812") ||
         text.includes("701") ||
+        text.includes("907") ||
         text.includes("902"))
     ) {
       let netImage = `<img src=".//images/air.png"airtel logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Airtel Nigeria";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Airtel Nigeria`;
     } else if (
       (myCountry.value === "nig") &
       (text.includes("809") ||
@@ -102,10 +96,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/9m.png" alt="9mobile logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is 9mobile Nigeria";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is 9mobile Nigeria`;
     } else if (
       (myCountry.value === "gha") &
       (text.includes("024") ||
@@ -134,17 +125,11 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/voda.png" alt="vodafone logo" ></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Vodafone Ghana";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Vodafone Ghana`;
     } else if ((myCountry.value === "gha") & text.includes("028")) {
       let netImage = `<img src=".//images/exp.png" alt="expresso logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Expresso Ghana";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Expresso Ghana`;
     } else if (
       (myCountry.value === "cam") &
       (text.includes("745") ||
@@ -156,10 +141,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/mtn.png" alt="mtn logo" ></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is MTN Cameroon";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is MTN Cameroon`;
     } else if (
       (myCountry.value === "cam") &
       (text.includes("940") ||
@@ -172,18 +154,14 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/oran.png" alt="orange logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Orange Cameroon";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Orange Cameroon`;
     } else if (
       (myCountry.value === "cam") &
       (text.includes("22") || text.includes("33"))
     ) {
       let netImage = `<img src=".//images/cam.png" alt="Camtel logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " + myName.value + ", your network  service provider is CAMTEL";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is CAMTEL`;
     } else if (
       (myCountry.value === "ken") &
       (text.includes("11") ||
@@ -227,10 +205,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/saf.png"" alt="Safaricom logo" ></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Safaricom Kenya";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Safaricom Kenya`;
     } else if (
       (myCountry.value === "ken") &
       (text.includes("10") ||
@@ -266,10 +241,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/air.png" alt="Airtel logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Airtel Kenya";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Airtel Kenya`;
     } else if (
       (myCountry.value === "ken") &
       (text.includes("940") ||
@@ -285,10 +257,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/tel.png" alt="Telkom logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Telkom Kenya";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Telkom Kenya`;
     } else if (
       (myCountry.value === "uga") &
       (text.includes("076") ||
@@ -299,8 +268,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/mtn.png" alt="MTN logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " + myName.value + ", your network  service provider is MTN Uganda";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is MTN Uganda`;
     } else if (
       (myCountry.value === "uga") &
       (text.includes("070") ||
@@ -310,10 +278,7 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/air.png" alt="Airtel logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Airtel Uganda";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Airtel Uganda`;
     } else if (
       (myCountry.value === "bot") &
       (text.includes("71") ||
@@ -332,44 +297,33 @@ function startApp() {
     ) {
       let netImage = `<img src=".//images/mas.png" alt="mascom logo"></img>`;
       container.innerHTML = netImage;
-      demo.innerHTML =
-        "Hi " +
-        myName.value +
-        ", your network  service provider is Mascom Botswana";
-      } else if (
-        (myCountry.value === "bot") &
-        (text.includes("72") ||
-          text.includes("743") ||
-          text.includes("744") ||
-          text.includes("750") ||
-          text.includes("751") ||
-          text.includes("752") ||
-          text.includes("753") ||
-          text.includes("763") ||
-          text.includes("764") ||
-          text.includes("765"))
-      ) {
-        let netImage = `<img src=".//images/oran.png" alt="Orange logo"></img>`;
-        container.innerHTML = netImage;
-        demo.innerHTML =
-          "Hi " +
-          myName.value +
-        ", your network  service provider is Orange Botswana";
-      } else if (
-        (myCountry.value === "bot") &
-        (text.includes("73"))
-      ) {
-        let netImage = `<img src=".//images/bot.png" alt="BTC logo"></img>`;
-        container.innerHTML = netImage;
-        demo.innerHTML =
-          "Hi " +
-          myName.value +
-        ", your network  service provider is Botswana Telecom";
-      } else if (
-        myCountry.value === "" || myInput.value ==="" || myName.value ===""
-      ) {
-        demo.innerHTML =
-          "Comrade fill up the form";
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Mascom Botswana`;
+    } else if (
+      (myCountry.value === "bot") &
+      (text.includes("72") ||
+        text.includes("743") ||
+        text.includes("744") ||
+        text.includes("750") ||
+        text.includes("751") ||
+        text.includes("752") ||
+        text.includes("753") ||
+        text.includes("763") ||
+        text.includes("764") ||
+        text.includes("765"))
+    ) {
+      let netImage = `<img src=".//images/oran.png" alt="Orange logo"></img>`;
+      container.innerHTML = netImage;
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Orange Botswana`;
+    } else if ((myCountry.value === "bot") & text.includes("73")) {
+      let netImage = `<img src=".//images/bot.png" alt="BTC logo"></img>`;
+      container.innerHTML = netImage;
+      demo.innerHTML = `Dear comrade ${myName.value},<br/> your network  service provider is Botswana Telecom`;
+    } else if (
+      myCountry.value === "" ||
+      myInput.value === "" ||
+      myName.value === ""
+    ) {
+      demo.innerHTML = "Comrade fill up the form";
     } else {
       demo.innerHTML = "Invalid service provider";
       container.innerHTML = "";
