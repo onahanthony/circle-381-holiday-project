@@ -33,6 +33,7 @@
 body {
   background-image: url("bg-img.png");
   font-family: "Proxima Nova";
+  padding: 1rem;
 }
 .top-text {
   margin-top: 80px;
