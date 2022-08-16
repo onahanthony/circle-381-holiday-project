@@ -31,7 +31,8 @@
 }
 
 body {
-  background-image: url("bg-img.png");
+  /* background-image: url("bg-img.png"); */
+  background-color: orangered;
   font-family: "Proxima Nova";
 
 }
@@ -41,6 +42,21 @@ body {
 .top-text {
   margin-top: 80px;
   text-align: center;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+@keyframes slide{
+  from{
+    margin-left: 0;
+    color: black;
+  }
+  to{
+    margin-left: 400px;
+    color:green;
+  }
 }
 .top-text h1 {
   font-size: 30px;
@@ -61,15 +77,18 @@ body {
 .flexed-div {
   display: flex;
   justify-content: center;
+  
 }
 .container {
   display: inline-block;
   justify-content: center;
-  border: solid 2px #d5f1ee;
+  /* border: solid 2px #d5f1ee; */
+  border: none;
   padding: 25px;
   margin-top: 40px;
   border-radius: 10px;
-  background: #d5f1ee;
+  /* background: #d5f1ee; */
+  background-color: chartreuse;
 }
 .input-area {
   padding: 10px;
@@ -82,7 +101,7 @@ body {
   font-size: 12px;
 }
 .submit {
-  background: #2079ff;
+  background: green;
   border: #2079ff;
   width: 350px;
   height: 35px;
@@ -181,6 +200,7 @@ body {
   }
   .submit {
     width: 100%;
+    display: inline-block;
     height: 30px;
     min-width: 260px;
   }
